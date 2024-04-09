@@ -4,10 +4,9 @@ const Navbar = () => {
     const Links = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/'>Update Profile</Link></li>
-
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-transparent absolute z-10 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,7 +16,7 @@ const Navbar = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="  text-xl">daisyUI</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
