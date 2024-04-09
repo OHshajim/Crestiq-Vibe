@@ -3,8 +3,8 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Footer = () => {
     return (
         <div>
-        <div className="bg-[#141313] flex flex-col justify-between items-center">
-            <div className="max-w-[1600px] w-full">
+        <div className="bg-[#141313] ">
+            <div className="max-w-[1600px]  mx-auto">
                 <footer className="footer p-10 text-base-content ">
                     <p>ACME Industries Ltd. <br />Providing reliable tech since 1992</p>
 
