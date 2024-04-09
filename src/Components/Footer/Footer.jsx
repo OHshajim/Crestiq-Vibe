@@ -1,3 +1,4 @@
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Footer = () => {
     return (
@@ -28,7 +29,7 @@ const Footer = () => {
                             </label>
                             <div className="join">
                                 <input type="text" placeholder="username@site.com" className="input input-bordered join-item border-none" />
-                                <button className="btn btn-accent join-item text-3xl  border-none">icon</button>
+                                <button className="btn btn-accent join-item text-3xl  border-none"><AiOutlineArrowRight /></button>
                             </div>
                         </fieldset>
                     </form>
