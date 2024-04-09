@@ -27,31 +27,31 @@ const Header = () => {
     >
       <SwiperSlide>
         <div className='h-screen slide1 ' >
-          
-        <div className='flex justify-center items-center h-full'>
-          <h1 className='text-4xl '>Dreams becomes true</h1>
-        </div>
-        
+
+          <div className='flex justify-center items-center h-full'>
+            <h1 className='text-4xl '>Dreams becomes true</h1>
+          </div>
+
         </div>
 
       </SwiperSlide>
       <SwiperSlide>
         <div className='h-screen slide2 ' >
-          
-        <div className='flex justify-center items-center h-full'>
-          <h1 className='text-4xl '>Dreams becomes true</h1>
-        </div>
-        
+
+          <div className='flex justify-center items-center h-full'>
+            <h1 className='text-4xl '>Dreams becomes true</h1>
+          </div>
+
         </div>
 
       </SwiperSlide>
       <SwiperSlide>
         <div className='h-screen slide3 ' >
-          
-        <div className='flex justify-center items-center h-full'>
-          <h1 className='text-4xl '>Dreams becomes true</h1>
-        </div>
-        
+
+          <div className='flex justify-center items-center h-full'>
+            <h1 className='text-4xl '>Dreams becomes true</h1>
+          </div>
+
         </div>
 
       </SwiperSlide>

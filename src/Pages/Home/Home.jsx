@@ -4,7 +4,9 @@ import Navbar from "../../Components/Nav/Navbar";
 const Home = () => {
     return (
         <div>
+            <div className="fixed z-10 w-full">
             <Navbar/>
+            </div>
             <Header />
 
             
