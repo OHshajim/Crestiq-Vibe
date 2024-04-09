@@ -6,7 +6,7 @@ const Navbar = () => {
         <li><Link to='/'>Update Profile</Link></li>
     </>
     return (
-        <div className="navbar bg-transparent absolute z-10 text-white">
+        <div className="navbar bg-transparent  z-10 text-white fixed">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

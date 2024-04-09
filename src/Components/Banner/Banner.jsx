@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/scrollbar';
-import './Header.css'
+import './Banner.css'
 const Header = () => {
   return (
     <Swiper
@@ -18,7 +18,7 @@ const Header = () => {
       }}
       slidesPerView={1}
       navigation={true}
-      speed={1700}
+      speed={1600}
       loop={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}

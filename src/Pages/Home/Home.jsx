@@ -1,4 +1,4 @@
-import Header from "../../Components/Header/Header";
+import Header from "../../Components/Banner/Banner";
 import Navbar from "../../Components/Nav/Navbar";
 
 const Home = () => {
@@ -6,6 +6,8 @@ const Home = () => {
         <div>
             <Navbar />
             <Header />
+
+            
         </div>
     );
 };
