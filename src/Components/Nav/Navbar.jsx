@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-    const { user ,LogOut} = useContext(AuthContext)
+    const { user, LogOut } = useContext(AuthContext)
     const Links = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/update'>Update Profile</NavLink></li>
@@ -31,14 +31,16 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    user ? <button className="btn ml-3" onClick={logout}>Log out</button> : <>
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-12 rounded-full">
-                                <img alt="User" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    user ?
+                        <>
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-left" data-tip={user.displayName}>
+                                <div className="w-12 rounded-full ">
+                                    <img alt="User" src={user.photoURL} />
+                                </div>
                             </div>
-                        </div>
-                        <Link className="btn ml-3" to='/login' >Log in</Link>
-                    </>
+                            <button className="btn ml-3" onClick={logout}>Log out</button>
+                        </>
+                        :<Link className="btn ml-3" to='/login' >Log in</Link>
                 }
 
             </div>
