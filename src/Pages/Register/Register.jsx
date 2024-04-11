@@ -4,12 +4,16 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 import { RiLockPasswordLine, RiLockPasswordFill } from "react-icons/ri";
+import { updateProfile } from "firebase/auth";
+import auth from "../../Firebase/Firebase.config";
 const Register = () => {
     const { register } = useContext(AuthContext)
     const [error, setError] = useState('')
     const handleRegister = e => {
         e.preventDefault()
         const email = e.target.email.value;
+        const name = e.target.name.value;
+        const image = e.target.image.value;
         const password = e.target.password.value;
         const confirmPassword = e.target.confirmPassword.value;
         setError("")
@@ -34,7 +38,17 @@ const Register = () => {
         console.log(email, password, confirmPassword);
         // log in 
         register(email, password)
-            .then(result => console.log(result.user))
+            .then(result => {
+                console.log(result.user, auth.currentUser)
+                updateProfile(auth.currentUser, {
+                    displayName:  name , photoURL:  image 
+                }).then(() => {
+                    console.log(auth.currentUser)
+                }).catch((error) => {
+                    console.log(error)
+                });
+
+            })
             .catch(error => console.log(error))
     }
 
