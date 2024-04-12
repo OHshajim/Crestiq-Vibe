@@ -14,7 +14,8 @@ const Router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                loader :()=>fetch('../../../public/Data/Estate.json')
             },
             {
                 path: "/update",
