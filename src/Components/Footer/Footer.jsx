@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
         <div className="bg-[#141313] ">
             <div className="max-w-[1700px]  mx-auto">
-                <footer className="footer py-10 text-base-content ">
+                <footer className="footer py-10 px-10 md:px-4 text-base-content ">
                     <p>Crestiq Vibe Industries Ltd. <br />Providing reliable tech since 2010</p>
 
                     <nav>

@@ -1,4 +1,5 @@
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Estate = ({ property }) => {
     const { image_url, estate_title, id, segment_name, description, price, status, area, location, facilities } = property
@@ -31,11 +32,11 @@ const Estate = ({ property }) => {
                         }
                     </div>
                     <div className="card-actions justify-end ">
-                        <button className="btn btn-primary">View Property</button>
-                    </div>
+                        <Link to={`/EstateDetails/${id}`}><button className="btn btn-primary">View Property</button></Link>
                 </div>
             </div>
         </div>
+        </div >
     );
 };
 
