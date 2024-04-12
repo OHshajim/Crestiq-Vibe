@@ -6,14 +6,14 @@ const Footer = () => {
         <div className="bg-[#141313] ">
             <div className="max-w-[1600px]  mx-auto">
                 <footer className="footer p-10 text-base-content ">
-                    <p>ACME Industries Ltd. <br />Providing reliable tech since 1992</p>
+                    <p>Crestiq Vibe Industries Ltd. <br />Providing reliable tech since 2010</p>
 
                     <nav>
                         <h6 className="footer-title text-2xl">Our Services</h6>
                         <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <a className="link link-hover">Best Design</a>
+                        <a className="link link-hover">Best Price</a>
+                        <a className="link link-hover"></a>
                     </nav>
                     <nav>
                         <h6 className="footer-title text-2xl">Legal</h6>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <footer className="footer footer-center p-4 bg-black text-base-content">
                 <aside>
-                    <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © 2024 - All right reserved by Crestiq Vibe Industries Ltd</p>
                 </aside>
             </footer>
         </div >

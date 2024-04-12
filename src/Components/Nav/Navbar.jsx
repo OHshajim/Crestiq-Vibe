@@ -22,7 +22,7 @@ const Navbar = () => {
                         {Links}
                     </ul>
                 </div>
-                <a className="  text-xl">daisyUI</a>
+                <a className="  text-xl">Crestiq Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
