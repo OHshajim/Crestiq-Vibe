@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -9,8 +9,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? " border " : ""
-            }
-        >
+            }>
             home
         </NavLink></li>
 
@@ -19,8 +18,9 @@ const Navbar = () => {
     const logout = () => {
         LogOut()
     }
+    
     return (
-        <div className="navbar bg-transparent  z-10 text-white ">
+        <div className="navbar   z-10 text-white ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,7 +52,7 @@ const Navbar = () => {
                 }
 
             </div>
-        </div>
+        </div >
     );
 };
 
