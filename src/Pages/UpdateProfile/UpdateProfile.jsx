@@ -4,8 +4,8 @@ import Navbar from "../../Components/Nav/Navbar";
 import { useForm } from "react-hook-form";
 
 const UpdateProfile = () => {
-    const { user } = useContext(AuthContext)
-    // console.log(user);
+    const { user ,isLoading} = useContext(AuthContext)
+    console.log(user);
     const { displayName, email, photoURL } = user
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
@@ -15,6 +15,9 @@ const UpdateProfile = () => {
     return (
         <div className="max-w-[1600px] flex flex-col  mx-auto h-[90vh]">
             <Navbar />
+            {
+                isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
+            }
             <div>
                 <h1 className="text-3xl font-bold ">Update your profile</h1>
             </div>
@@ -27,12 +30,11 @@ const UpdateProfile = () => {
                 <form className="form-control max-w-xl w-full " onSubmit={handleSubmit(onSubmit)}>
 
                     <label className="">Name</label>
-                    <input type="text" value={displayName} className="px-3 py-2 " name="displayNa"/>
+                    <input {...register("name")} name="name" type="text" defaultValue={displayName} className="px-3 py-2 " />
                     <label >Email</label>
-                    <input type="email" value={email} className="px-3 py-2 " />
+                    <input type="email" defaultValue={email} className="px-3 py-2 " />
                     <label >Photo URL</label>
-                    <input type="text" value={photoURL} className="px-3 py-2 " />
-
+                    <input type="text" defaultValue={photoURL} className="px-3 py-2 " />
                     <input type="submit" value="Update" className="btn " />
                 </form>
             </div>

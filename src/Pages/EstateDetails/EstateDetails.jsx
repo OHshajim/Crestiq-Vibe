@@ -6,13 +6,16 @@ const EstateDetails = () => {
     const { properties } = useLoaderData()
     const id = useParams()
     const property = properties.find(property => property.id === parseInt(id.id))
-    console.log(id.id, property);
-    const {  view_property_url, estate_title, segment_name, description, price, status, area, location, facilities } = property
+    // console.log(id.id, property);
+    const { view_property_url, estate_title, segment_name, description, price, status, area, location, facilities } = property
     return (
         <div className="max-w-[1700px] mx-auto">
             <Navbar />
-            <div className=" flex flex-col items-center justify-center lg:flex-row p-10 bg-base-100 shadow-xl my-20 ">
-                <figure><img src={view_property_url} alt="view property url" className="h-full w-full" /></figure>
+            {/* {
+                isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
+            } */}
+            <div className=" flex flex-col lg:flex-row items-center justify-center  p-10  bg-base-100 shadow-xl mb-20 ">
+                <figure><img src={view_property_url} alt="view property url" className=" max-w-2xl" /></figure>
                 <div className=" lg:px-10 lg:py-0  py-10 ">
                     <h2 className="text-3xl font-bold ">{estate_title}</h2>
                     <h3 className="text-lg font-medium ">{segment_name}</h3>
@@ -30,9 +33,6 @@ const EstateDetails = () => {
                         {
                             facilities.map((facility, idx) => <li key={idx}>{facility}</li>)
                         }
-                    </div>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Listen</button>
                     </div>
                 </div>
             </div>

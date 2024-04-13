@@ -7,40 +7,43 @@ import PropTypes from 'prop-types'; // ES6
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState(null)
-
+    const [user, setUser] = useState(null);
+    const [isLoading, setLoading] = useState(true);
 
     // Sign Up
     const register = (email, password) => {
-        // setLoad(true)
-        return createUserWithEmailAndPassword(auth, email, password)
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password);
     };
 
     // Login
     const login = (email, password) => {
-        return signInWithEmailAndPassword(auth, email, password)
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password);
 
     }
     // Google or github Login
     const GLogin = (Provider) => {
-        return signInWithPopup(auth, Provider)
+        setLoading(true)
+        return signInWithPopup(auth, Provider);
     }
 
     // log out
     const LogOut = () => {
-        // setLoader(true)
+        setLoading(true)
         signOut(auth);
     }
 
     useEffect(() => {
         const currentUser = onAuthStateChanged(auth, (user) => {
-            setUser(user)
+            setUser(user);
+            setLoading(false);
         });
         return () => currentUser()
     }, [])
 
 
-    const authInfo = { user, login, register, GLogin ,LogOut}
+    const authInfo = { user, login, register, GLogin, LogOut, isLoading };
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

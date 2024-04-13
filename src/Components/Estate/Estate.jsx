@@ -1,9 +1,10 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; // ES6
 
 const Estate = ({ property }) => {
     const { image_url, estate_title, id, segment_name, description, price, status, area, location, facilities } = property
-    console.log(facilities.length);
+    // console.log(facilities.length);
     return (
         <div>
             <div className="card  bg-base-100 shadow-xl h-full rounded-lg">
@@ -40,4 +41,7 @@ const Estate = ({ property }) => {
     );
 };
 
+Estate.propTypes = {
+    property:PropTypes.array.isRequired,
+}
 export default Estate;

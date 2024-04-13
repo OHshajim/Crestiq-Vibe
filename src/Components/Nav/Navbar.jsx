@@ -5,7 +5,15 @@ import { AuthContext } from "../../Provider/AuthProvider";
 const Navbar = () => {
     const { user, LogOut } = useContext(AuthContext)
     const Links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? " border " : ""
+            }
+        >
+            home
+        </NavLink></li>
+
         <li><NavLink to='/update'>Update Profile</NavLink></li>
     </>
     const logout = () => {
@@ -40,7 +48,7 @@ const Navbar = () => {
                             </div>
                             <button className="btn ml-3" onClick={logout}>Log out</button>
                         </>
-                        :<Link className="btn ml-3" to='/login' >Log in</Link>
+                        : <Link className="btn ml-3" to='/login' >Log in</Link>
                 }
 
             </div>
