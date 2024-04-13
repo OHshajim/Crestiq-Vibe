@@ -7,7 +7,11 @@ import { RiLockPasswordLine, RiLockPasswordFill } from "react-icons/ri";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.config";
 import { Helmet } from "react-helmet-async";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa6";
 const Register = () => {
+    const [isShow, setShow] = useState(false)
+    const [see, setSee] = useState(false)
     const { register } = useContext(AuthContext)
     const [error, setError] = useState('')
     const handleRegister = e => {
@@ -78,11 +82,25 @@ const Register = () => {
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black">
                             <RiLockPasswordLine />
-                            <input type="password" className="grow" placeholder="password" name="password" required />
+                            <input type={see ? "text" : "password"} className="grow" placeholder="password" name="password" required />
+                            <span onClick={() => setSee(!see)} className="text-sm sm:text-xl " >
+                                {
+                                    see ?
+                                        <FaRegEye /> :
+                                        <FaRegEyeSlash />
+                                }
+                            </span>
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black mt-5">
                             <RiLockPasswordFill />
-                            <input type="password" className="grow" placeholder="Confirm Password" name="confirmPassword" required />
+                            <input type={isShow ? "text" : "password"} className="grow" placeholder="Confirm Password" name="confirmPassword" required />
+                            <span onClick={() => setShow(!isShow)} className="text-sm sm:text-xl " >
+                                {
+                                    isShow ?
+                                        <FaRegEye /> :
+                                        <FaRegEyeSlash />
+                                }
+                            </span>
                         </label>
                         {
                             error && <p className="text-red-700 font-bold mt-3">{error}</p>
