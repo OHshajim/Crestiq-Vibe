@@ -7,6 +7,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import { Helmet } from "react-helmet-async";
 
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
@@ -14,7 +15,7 @@ const Login = () => {
 
 
     const { login, GLogin } = useContext(AuthContext)
-    
+
     const handleLogin = e => {
         e.preventDefault()
         const email = e.target.email.value;
@@ -39,6 +40,8 @@ const Login = () => {
     }
     return (
         <div>
+            <Helmet><title>Crestiq Vibe || Login</title></Helmet>
+
             <Navbar />
 
             <div className="flex flex-col justify-center items-center w-screen h-[80vh]">

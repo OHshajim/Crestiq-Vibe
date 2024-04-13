@@ -6,6 +6,7 @@ import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 import { RiLockPasswordLine, RiLockPasswordFill } from "react-icons/ri";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.config";
+import { Helmet } from "react-helmet-async";
 const Register = () => {
     const { register } = useContext(AuthContext)
     const [error, setError] = useState('')
@@ -41,7 +42,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user, auth.currentUser)
                 updateProfile(auth.currentUser, {
-                    displayName:  name , photoURL:  image 
+                    displayName: name, photoURL: image
                 }).then(() => {
                     console.log(auth.currentUser)
                 }).catch((error) => {
@@ -54,6 +55,8 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet><title>Crestiq Vibe || Register</title></Helmet>
+
             <div>
                 <Navbar />
 
