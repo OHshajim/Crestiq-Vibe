@@ -6,34 +6,35 @@ import Register from "../Register/Register";
 import UpdateProfile from "../UpdateProfile/UpdateProfile";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import EstateDetails from "../EstateDetails/EstateDetails";
+import PrivetRoute from "./PrivetRoute";
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
-        errorElement: <ErrorPage/> ,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
                 element: <Home />,
-                loader :()=>fetch('../../../public/Data/Estate.json')
+                loader: () => fetch('../../../public/Data/Estate.json')
             },
             {
                 path: "/EstateDetails/:id",
                 element: <EstateDetails />,
-                loader :()=>fetch('../../../public/Data/Estate.json')
+                loader: () => fetch('../../../public/Data/Estate.json')
             },
             {
                 path: "/update",
-                element: <UpdateProfile />
+                element: <PrivetRoute> <UpdateProfile /> </PrivetRoute>
             },
             {
                 path: "/login",
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: "/register",
-                element: <Register/>
+                element: <Register />
             },
         ]
     },

@@ -44,7 +44,7 @@ const Login = () => {
 
             <Navbar />
 
-            <div className="flex flex-col justify-center items-center w-screen h-[80vh]">
+            <div className="flex flex-col justify-center items-center  h-[80vh]">
                 <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-10 rounded-lg" onSubmit={handleLogin}>
                     <h3 className="text-3xl font-bold">Welcome Back </h3>
 
