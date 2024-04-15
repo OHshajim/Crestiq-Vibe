@@ -26,22 +26,28 @@ const Estate = ({ property }) => {
                         <p className="flex  items-center gap-1" > <span className="text-xl font-bold"><IoLocationOutline /></span> {location}</p>
                         <p className="border py-1 px-3 rounded-full font-bold">{area}</p>
                     </div>
-                    <div className="flex-grow">
-                        <h3>Facilities :</h3>
-                        {
-                            facilities.slice(0, 2).map((facility, idx) => <li key={idx}>{facility}</li>)
-                        }
+                    <div className="flex flex-col ">
+                        <div >
+                            <h3>Facilities :</h3>
+                            <div className="ml-10">
+                                <ul className=" list-disc">
+                                    {
+                                        facilities.slice(0, 2).map((facility, idx) => <li className="" key={idx}>{facility}</li>)
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="">
+                            <Link to={`/EstateDetails/${id}`}><button className="btn btn-primary">View Property</button></Link>
+                        </div>
                     </div>
-                    <div className="card-actions justify-end ">
-                        <Link to={`/EstateDetails/${id}`}><button className="btn btn-primary">View Property</button></Link>
                 </div>
             </div>
-        </div>
         </div >
     );
 };
 
 Estate.propTypes = {
-    property:PropTypes.array.isRequired,
+    property: PropTypes.array.isRequired,
 }
 export default Estate;

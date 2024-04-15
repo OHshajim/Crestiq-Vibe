@@ -11,19 +11,19 @@ const Header = () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, ]}
-      // autoplay={{
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // }}
+      modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
       slidesPerView={1}
       navigation={true}
       speed={1600}
       loop={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
+    // onSwiper={(swiper) => console.log(swiper)}
+    // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <div className='h-screen slide1 ' >
