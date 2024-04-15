@@ -48,6 +48,7 @@ const Login = () => {
             <div className="flex flex-col justify-center items-center  my-20">
                 <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-10 rounded-lg" onSubmit={handleLogin}>
                     <h3 className="text-3xl font-bold">Welcome Back </h3>
+                    <p>LogIn </p>
 
                     <label className="input input-bordered flex items-center gap-2 bg-black my-5">
                         <AiFillMail />
