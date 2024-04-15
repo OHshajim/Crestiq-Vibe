@@ -1,7 +1,8 @@
 
 const Team = () => {
     return (
-        <div className="max-w-[1600px] mx-auto my-28">
+        
+        <div className="max-w-[1600px] mx-auto mb-20 bg-[#1e1e1e]">
             <h3 className="text-center text-2xl my-5">PROFECTIONAL TEAM</h3>
             <h1 className="text-center text-4xl mb-8">Meet Our Leadership Team</h1>
             <div className="grid xl:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-5 p-5">
