@@ -3,6 +3,7 @@ import Header from "../../Components/Banner/Banner";
 import Estates from "../../Components/Estates/Estates";
 import Navbar from "../../Components/Nav/Navbar";
 import { useState } from "react";
+import Team from "../../Components/Team/Team";
 
 const Home = () => {
     const [fix, setFix] = useState(false)
@@ -25,6 +26,7 @@ const Home = () => {
 
             {/* body */}
             <Estates />
+            <Team/>
 
         </div>
     );

@@ -23,8 +23,8 @@
             "estate_title": "Mountain View Retreat",
             "segment_name": "Cabin",
             "description": "Experience the beauty of the Rocky Mountains with this charming mountain view retreat. Nestled amidst towering pine trees and sweeping vistas, this cozy cabin offers the perfect blend of rustic charm and modern convenience. Step inside and be greeted by a warm and inviting interior, with exposed wood beams, stone fireplace, and large picture windows that frame breathtaking views of the surrounding peaks. The open-concept living area is ideal for gatherings, with a fully equipped kitchen, dining area, and comfortable seating around the fireplace. Relax on the spacious deck and take in the fresh mountain air, or explore the nearby hiking trails and scenic overlooks. Whether you're seeking adventure or relaxation, this mountain retreat offers the perfect escape from the hustle and bustle of everyday life.",
-            "price": 500000,
-            "status": "sale",
+            "price": 50000,
+            "status": "rent",
             "area": "2500 sq ft",
             "location": "Aspen, Colorado, USA",
             "facilities": [
@@ -59,8 +59,8 @@
             "estate_title": "Lakefront Resort & Spa",
             "segment_name": "Resort",
             "description": "Experience lakeside luxury at this exclusive resort and spa, nestled along the shores of Lake Tahoe. Surrounded by towering pines and crystal-clear waters, this idyllic retreat offers the perfect blend of relaxation and adventure. Guests can unwind in the resort's luxurious accommodations, which feature plush bedding, marble bathrooms, and stunning views of the lake and mountains. The resort's spa offers a range of rejuvenating treatments, including massages, facials, and body wraps, while the fitness center provides state-of-the-art equipment and expert personal trainers. Outside, guests can enjoy a variety of recreational activities, including kayaking, paddleboarding, and hiking, or simply relax by the resort's outdoor pool and hot tub. With its serene setting, world-class amenities, and impeccable service, this lakefront resort offers an unforgettable escape for guests seeking to unwind and recharge in the beauty of Lake Tahoe.",
-            "price": 12000000,
-            "status": "sale",
+            "price": 120000,
+            "status": "rent",
             "area": "15000 sq ft",
             "location": "Lake Tahoe, California, USA",
             "facilities": [

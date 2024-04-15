@@ -13,12 +13,17 @@ const Navbar = () => {
             home
         </NavLink></li>
 
-        <li><NavLink to='/update'>Update Profile</NavLink></li>
+        <li><NavLink
+            to='/update'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? " border " : ""
+            }>
+            Update Profile</NavLink></li>
     </>
     const logout = () => {
         LogOut()
     }
-    
+
     return (
         <div className="navbar  text-white max-w-[1600px] mx-auto">
             <div className="navbar-start">
