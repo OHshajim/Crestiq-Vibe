@@ -34,10 +34,8 @@ const UpdateProfile = () => {
             {
                 isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
             }
-            <div>
-                <h1 className="text-3xl font-bold ">Update your profile</h1>
-            </div>
-            <div className="flex flex-col  items-center ">
+            <div className="flex flex-col  items-center h-full">
+                <h1 className="text-4xl font-bold my-20">Update your profile</h1>
                 <div className="avatar">
                     <div className="w-24 rounded-full">
                         <img src={photoURL} />

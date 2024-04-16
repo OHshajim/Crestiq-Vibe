@@ -4,6 +4,7 @@ import Estates from "../../Components/Estates/Estates";
 import Navbar from "../../Components/Nav/Navbar";
 import { useState } from "react";
 import Team from "../../Components/Team/Team";
+import Achievement from "../../Components/Achievement/Achievement";
 
 const Home = () => {
     const [fix, setFix] = useState(false)
@@ -22,12 +23,14 @@ const Home = () => {
             <div className={fix?"fixed z-10 w-full bg-[#0f0e0e] duration-500":"fixed z-10 w-full duration-200"}>
                 <Navbar />
             </div>
+
             <Header />
 
             {/* body */}
             <div className="bg-[#1e1e1edc] py-10">
             <Estates />
             <Team/>
+            <Achievement/>
             </div>
         </div>
     );

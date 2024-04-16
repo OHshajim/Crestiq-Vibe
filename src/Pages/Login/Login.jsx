@@ -76,7 +76,6 @@ const Login = () => {
                     <div className=" flex justify-center gap-5 pt-3">
                         <button onClick={handleGoogle} className="btn btn-circle text-3xl text-center"><FcGoogle /></button>
                         <button onClick={handleGithub} className="btn btn-circle text-3xl text-center"> <BsGithub /></button>
-
                     </div>
                 </form>
             </div>

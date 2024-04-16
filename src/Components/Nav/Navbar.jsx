@@ -19,6 +19,12 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? " border " : ""
             }>
             Update Profile</NavLink></li>
+
+        <li><NavLink
+            to='/aboutus'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? " border " : ""
+            }>About Us</NavLink></li>
     </>
     const logout = () => {
         LogOut()
