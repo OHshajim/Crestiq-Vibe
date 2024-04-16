@@ -1,11 +1,11 @@
 
 const Achievement = () => {
     return (
-        <div className="flex flex-1 flex-col md:flex-row  max-w-[1600px] mx-auto p-8 gap-10">
+        <div className="flex flex-1 flex-col lg:flex-row  max-w-[1600px] mx-auto p-8 gap-10">
             <div>
-                <img src="	https://demo.xstheme.com/lacasa/wp-content/themes/lacasa/assets/images/funfact/img1.jpg" alt="" />
+                <img src="https://i.ibb.co/VqhPKBx/img1.jpg" alt="building" className="w-full" />
             </div>
-            <div className="flex flex-1 flex-col my-8 md:my-20 space-y-8">
+            <div className="flex flex-1 flex-col my-8 lg:my-20 space-y-8">
                 <div className="flex items-center gap-4">
                     <h3 className="text-2xl ">Fun Fact</h3>
                     <div className="border w-28"></div>

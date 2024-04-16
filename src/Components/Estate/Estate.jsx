@@ -50,6 +50,6 @@ const Estate = ({ property }) => {
 };
 
 Estate.propTypes = {
-    property: PropTypes.array.isRequired,
+    property: PropTypes.object.isRequired,
 }
 export default Estate;
