@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="bg-[#141313] ">
             <div className="max-w-[1600px]  mx-auto">
                 <footer className="flex flex-col lg:flex-row  justify-between items-start lg:items-center footer py-10 px-10 md:px-4 text-base-content">
-                    <p className="text-3xl">Crestiq Vibe <br /><span className="text-base " >Providing reliable tech since 2010</span></p>
+                    <p className="text-3xl">Crestiq Vibe <br /><span className="text-base " >Providing reliable tech since 2018</span></p>
 
                     <nav>
                         <h6 className="footer-title text-2xl">Our Services</h6>

@@ -17,19 +17,19 @@ const Achievement = () => {
                     <div className="stat">
                         <div className="stat-title">Total Projects</div>
                         <div className="stat-value">508</div>
-                        <div className="stat-desc">Jan 1st 2022 - Apr 1st 2024</div>
+                        <div className="stat-desc">Jan 1st 2018 - Apr 1st 2024</div>
                     </div>
 
                     <div className="stat">
                         <div className="stat-title">Our Clients</div>
-                        <div className="stat-value">308</div>
+                        <div className="stat-value">428</div>
                         <div className="stat-desc">↗︎ 243 (22%)</div>
                     </div>
 
                     <div className="stat">
                         <div className="stat-title">Awards</div>
                         <div className="stat-value">22</div>
-                        <div className="stat-desc">Jan 1st 2022 - Apr 1st 2024</div>
+                        <div className="stat-desc">Jan 1st 2018 - Apr 1st 2024</div>
                     </div>
 
                 </div>
