@@ -5,6 +5,7 @@ import Navbar from "../../Components/Nav/Navbar";
 import { useState } from "react";
 import Team from "../../Components/Team/Team";
 import Achievement from "../../Components/Achievement/Achievement";
+import TopPlace from "../../Components/TopPlace/TopPlace";
 
 const Home = () => {
     const [fix, setFix] = useState(false)
@@ -29,6 +30,9 @@ const Home = () => {
             {/* body */}
             <div className=" py-10">
                 <Estates />
+                <TopPlace/>
+
+                {/* service to chose us  */}
                 <div className="max-w-[1600px] mx-auto px-8 my-20">
 
                     <h1 className="text-center text-2xl md:text-3xl lg:text-5xl">Why our services are the top choice</h1>
