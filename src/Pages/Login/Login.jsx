@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { AiFillMail } from "react-icons/ai";
@@ -19,6 +19,7 @@ const Login = () => {
     const [isShow, setShow] = useState(false)
     const { login, GLogin } = useContext(AuthContext)
     const [ error, setError ] = useState(' ')
+    const location = useLocation()
     const navigate = useNavigate()
 
     const handleLogin = e => {
@@ -43,7 +44,7 @@ const Login = () => {
                     transition: Bounce,
                 });
                 console.log(result.user);
-                navigate("/")
+                navigate(location?.state? location.state:"/")
             })
             .catch(error => {
                 console.log(error.code)
@@ -78,7 +79,7 @@ const Login = () => {
                 });
                 console.log(result.user);
 
-                navigate('/')
+                navigate(location?.state? location.state:"/")
 
             })
             .catch(error => {
@@ -113,6 +114,8 @@ const Login = () => {
                     transition: Bounce,
                 });
                 console.log(result.user);
+                navigate(location?.state? location.state:"/")
+
 
             })
             .catch(error => {
