@@ -1,16 +1,16 @@
 
 const Achievement = () => {
     return (
-        <div className="flex flex-1 flex-col lg:flex-row  max-w-[1600px] mx-auto p-8 gap-10">
+        <div className="flex flex-1 flex-col xl:flex-row  p-8 gap-10">
             <div>
                 <img src="https://i.ibb.co/VqhPKBx/img1.jpg" alt="building" className="w-full" />
             </div>
-            <div className="flex flex-1 flex-col my-8 lg:my-20 space-y-8">
+            <div className="flex flex-1 flex-col my-8 sm:my-20 space-y-2 md:space-y-8">
                 <div className="flex items-center gap-4">
-                    <h3 className="text-2xl ">Fun Fact</h3>
-                    <div className="border w-28"></div>
+                    <h3 className="text-lg md:text-2xl ">Fun Fact</h3>
+                    <div className="border w-14 md:w-28"></div>
                 </div>
-                <h1 className="text-5xl ">Our Achievements</h1>
+                <h1 className="text-2xl lg:text-4xl">Our Achievements</h1>
                 <p></p>
                 <div className="stats stats-vertical lg:stats-horizontal bg-transparent ">
 

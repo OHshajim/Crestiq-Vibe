@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import Navbar from "../../Components/Nav/Navbar";
 import { Helmet } from "react-helmet-async";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.config";
@@ -30,7 +29,6 @@ const UpdateProfile = () => {
     return (
         <div className="max-w-[1600px] flex flex-col  mx-auto h-[90vh]">
             <Helmet><title>Crestiq Vibe || Update Profile</title></Helmet>
-            <Navbar />
             {
                 isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
             }

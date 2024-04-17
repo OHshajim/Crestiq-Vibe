@@ -74,20 +74,20 @@
         },
         {
             "id": 5,
-            "estate_title": "Coastal Bed and Breakfast",
-            "segment_name": "B&B",
-            "description": "Escape to the coast with this charming bed and breakfast, located in the heart of Cape Cod. Housed in a beautifully restored 19th-century Victorian mansion, this boutique inn offers a peaceful retreat for guests seeking relaxation and romance. Each of the inn's guest rooms and suites is elegantly appointed with antique furnishings, plush bedding, and modern amenities, while the common areas feature cozy seating areas, crackling fireplaces, and stunning views of the surrounding gardens and coastline. Wake up to the smell of freshly brewed coffee and enjoy a delicious homemade breakfast served in the inn's sunny dining room or on the outdoor patio overlooking the ocean. With its prime location, luxurious accommodations, and warm hospitality, this coastal bed and breakfast offers an unforgettable experience for guests seeking to explore the natural beauty and charm of Cape Cod.",
-            "price": 2500000,
+            "estate_title": "Seaside Guesthouse Retreat",
+            "segment_name": "Guesthouses",
+            "description": "Discover coastal charm and tranquility at this inviting seaside guesthouse retreat. Located just steps from the sandy shores of Santa Monica Beach, this charming property offers the perfect blend of comfort and convenience for travelers seeking a beachside getaway. The guesthouse features a bright and airy interior, with coastal-inspired decor, plush furnishings, and panoramic views of the Pacific Ocean. Relax in the cozy living area, complete with a fireplace and comfortable seating, or step outside to the private patio and soak up the sun while listening to the sound of waves crashing on the shore. The guesthouse also includes a well-equipped kitchenette, allowing guests to prepare light meals and snacks during their stay. With its prime location, comfortable accommodations, and laid-back beach vibes, this seaside guesthouse retreat offers an idyllic escape for travelers looking to experience the best of Southern California's coastal lifestyle.",
+            "price": 750000,
             "status": "sale",
-            "area": "6000 sq ft",
-            "location": "Cape Cod, Massachusetts, USA",
+            "area": "1000 sq ft",
+            "location": "Santa Monica, California, USA",
             "facilities": [
-                "Victorian mansion",
-                "Ocean views",
-                "Homemade breakfast",
-                "Garden patio"
+                "Seaside location",
+                "Private patio",
+                "Kitchenette",
+                "Ocean views"
             ],
-            "image_url": "https://i.ibb.co/3h1mfKv/B-B.jpg" ,
+            "image_url": "https://i.ibb.co/3h1mfKv/B-B.jpg",
             "view_property_url": "https://i.ibb.co/5sbSJp6/B-BP.webp"
         },
         {
@@ -95,9 +95,9 @@
             "estate_title": "Ski-In/Ski-Out Chalet",
             "segment_name": "Chalet",
             "description": "Experience the ultimate alpine getaway with this luxurious ski-in/ski-out chalet in the heart of the French Alps. Nestled amidst snow-capped peaks and pristine slopes, this exquisite retreat offers the perfect blend of comfort and convenience for discerning travelers. Step inside and be greeted by a warm and inviting interior, with rustic wood beams, stone accents, and panoramic views of the surrounding mountains. The spacious living area is ideal for entertaining, with a cozy fireplace, comfortable seating, and a gourmet kitchen where you can whip up delicious meals after a day on the slopes. Retreat to one of the chalet's luxurious bedrooms, each with its own ensuite bath and plush bedding, ensuring a restful night's sleep after a day of adventure. Outside, the expansive deck beckons for relaxation, with a private hot tub where you can soak sore muscles and savor the crisp mountain air. With its prime location, luxurious accommodations, and unparalleled access to the slopes, this ski chalet offers an unforgettable mountain escape for guests seeking the ultimate in alpine luxury.",
-            "price": 5000000,
-            "status": "sale",
-            "area": "4000 sq ft",
+            "price": 500000,
+            "status": "rant",
+            "area": "3000 sq ft",
             "location": "Courchevel, French Alps",
             "facilities": [
                 "Ski-in/ski-out access",

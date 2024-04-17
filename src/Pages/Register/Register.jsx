@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Navbar from "../../Components/Nav/Navbar";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
@@ -9,11 +8,14 @@ import auth from "../../Firebase/Firebase.config";
 import { Helmet } from "react-helmet-async";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
+import { Bounce, toast } from "react-toastify";
 const Register = () => {
     const [isShow, setShow] = useState(false)
     const [see, setSee] = useState(false)
     const { register } = useContext(AuthContext)
     const [error, setError] = useState('')
+    const navigate = useNavigate()
+
     const handleRegister = e => {
         e.preventDefault()
         const email = e.target.email.value;
@@ -49,12 +51,37 @@ const Register = () => {
                     displayName: name, photoURL: image
                 }).then(() => {
                     console.log(auth.currentUser)
+                    toast.success(' successfully logged out', {
+                        position: "top-right",
+                        autoClose: 3500,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                        transition: Bounce,
+                    });
+                    navigate('/')
                 }).catch((error) => {
                     console.log(error)
                 });
 
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                console.log(error)
+                toast.error(`${error.code}`, {
+                    position: "top-right",
+                    autoClose: 3500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Bounce,
+                });
+            })
     }
 
     return (
@@ -62,7 +89,6 @@ const Register = () => {
             <Helmet><title>Crestiq Vibe || Register</title></Helmet>
 
             <div>
-                <Navbar />
 
                 <div className="flex flex-col justify-center items-center w-screen h-[80vh]">
                     <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-10 rounded-lg" onSubmit={handleRegister}>

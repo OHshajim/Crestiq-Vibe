@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import { createContext, useEffect, useState } from 'react';
 import auth from '../Firebase/Firebase.config';
 import PropTypes from 'prop-types'; // ES6
+import { toast } from 'react-toastify';
 
 
 export const AuthContext = createContext(null)
@@ -36,6 +37,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const currentUser = onAuthStateChanged(auth, (user) => {
+            // toast('Here is your toast.');
             setUser(user);
             setLoading(false);
         });

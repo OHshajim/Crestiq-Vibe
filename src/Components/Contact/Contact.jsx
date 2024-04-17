@@ -5,14 +5,14 @@ import { MdForwardToInbox } from "react-icons/md";
 const Contact = () => {
     return (
         <div className="mb-20">
-            <div className="flex flex-1 flex-col-reverse lg:flex-row  max-w-[1600px] mx-auto p-8 gap-10">
+            <div className="flex flex-1 flex-col-reverse xl:flex-row  p-8 gap-10">
 
-                <div className="flex flex-1 flex-col my-8 lg:my-20 space-y-8">
+                <div className="flex flex-1 flex-col my-8 lg:my-20 space-y-2 md:space-y-8">
                     <div className="flex items-center gap-4">
-                        <h3 className="text-2xl ">Get In touch</h3>
-                        <div className="border w-28"></div>
+                        <div className="border w-14 md:w-28"></div>
+                        <h3 className="text-lg md:text-2xl">Get In touch</h3>
                     </div>
-                    <h1 className="text-5xl ">Contact With Us</h1>
+                    <h1 className="text-2xl lg:text-4xl">Contact With Us</h1>
                     <p></p>
                     <div className="stats stats-vertical lg:stats-horizontal bg-transparent ">
 

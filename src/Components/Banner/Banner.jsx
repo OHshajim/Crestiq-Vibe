@@ -10,26 +10,24 @@ import './Banner.css'
 const Header = () => {
   return (
     <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-      }}
+      modules={[Navigation, Pagination, Scrollbar,]}
+      // autoplay={{
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // }}
       slidesPerView={1}
       navigation={true}
       speed={1600}
       loop={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-    // onSwiper={(swiper) => console.log(swiper)}
-    // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <div className='h-screen slide1 ' >
 
-          <div className='flex justify-center items-center h-full'>
-            <h1 className='text-4xl '>Dreams becomes true</h1>
+          <div className='flex flex-col justify-center max-w-[1500px] mx-auto h-full'>
+            <h1 className='text-5xl font-bold'>Crestiq Vibe</h1>
+            <h3 className='text-xl'>Welcome to Crestiq Vibe: Your Gateway to Extraordinary Escapes</h3>
           </div>
 
         </div>
