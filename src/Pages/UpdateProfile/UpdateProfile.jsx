@@ -27,27 +27,27 @@ const UpdateProfile = () => {
     }
 
     return (
-        <div className="max-w-[1600px] flex flex-col  mx-auto h-[90vh]">
+        <div className="max-w-[1600px] flex flex-col  mx-auto py-20">
             <Helmet><title>Crestiq Vibe || Update Profile</title></Helmet>
             {
                 isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
             }
             <div className="flex flex-col  items-center h-full">
-                <h1 className="text-4xl font-bold my-20">Update your profile</h1>
-                <div className="avatar">
-                    <div className="w-24 rounded-full">
-                        <img src={photoURL} />
+                <h1 className="text-4xl font-bold mb-20" data-aos="fade-left">Update your profile</h1>
+                <div className="avatar" data-aos="fade-in">
+                    <div className="w-36 rounded-full">
+                        <img src={photoURL} className="border-[5px] rounded-full "/>
                     </div>
                 </div>
-                <form className="form-control max-w-xl w-full " onSubmit={handleUpdate}>
+                <form className="form-control max-w-xl w-full " onSubmit={handleUpdate} data-aos="fade-in">
 
-                    <label className="">Name</label>
-                    <input name="name" type="text" defaultValue={displayName} className="px-3 py-2 " required/>
-                    <label >Email</label>
-                    <input type="email" value={email} name="email" className="px-3 py-2 " />
-                    <label >Photo URL</label>
-                    <input type="text" defaultValue={photoURL} name="image" className="px-3 py-2 " required/>
-                    <input type="submit" value="Update" className="btn " />
+                    <label className="text-xl">Name</label>
+                    <input name="name" type="text" defaultValue={displayName} className="px-3 py-2 mb-3" required/>
+                    <label className="text-xl">Email</label>
+                    <input type="email" value={email} name="email" className="px-3 py-2 mb-3" />
+                    <label className="text-xl" >Photo URL</label>
+                    <input type="text" defaultValue={photoURL} name="image" className="px-3 py-2 mb-3" required/>
+                    <input type="submit" value="Update" className="btn mt-3" />
                 </form>
             </div>
 

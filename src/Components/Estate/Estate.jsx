@@ -7,7 +7,7 @@ const Estate = ({ property }) => {
     // console.log(facilities.length);
     return (
         <div>
-            <div className="card  bg-[#191818] shadow-xl h-full rounded-lg ">
+            <div className="card  bg-[#191818] shadow-xl h-full rounded-lg " data-aos="fade-up">
                 <figure ><img src={image_url} alt="Property" className="max-w-[730px] w-full h-[250px] rounded-lg m-5" /></figure>
                 <div className="p-5 ">
                     <h2 className="card-title">{estate_title}</h2>

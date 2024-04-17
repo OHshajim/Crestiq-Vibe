@@ -1,7 +1,7 @@
 
 const Achievement = () => {
     return (
-        <div className="flex flex-1 flex-col xl:flex-row  p-8 gap-10">
+        <div className="flex flex-1 flex-col xl:flex-row  p-8 gap-10" data-aos="fade-right">
             <div>
                 <img src="https://i.ibb.co/VqhPKBx/img1.jpg" alt="building" className="w-full" />
             </div>
