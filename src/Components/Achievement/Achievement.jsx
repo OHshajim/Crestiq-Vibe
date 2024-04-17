@@ -10,7 +10,7 @@ const Achievement = () => {
                     <h3 className="text-lg md:text-2xl ">Fun Fact</h3>
                     <div className="border w-14 md:w-28"></div>
                 </div>
-                <h1 className="text-2xl lg:text-4xl">Our Achievements</h1>
+                <h1 className="text-2xl lg:text-4xl font-bold">Our Achievements</h1>
                 <p></p>
                 <div className="stats stats-vertical lg:stats-horizontal bg-transparent ">
 

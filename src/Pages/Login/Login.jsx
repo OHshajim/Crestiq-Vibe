@@ -140,7 +140,7 @@ const Login = () => {
             <Helmet><title>Crestiq Vibe || Login</title></Helmet>
             <div className="flex flex-col justify-center items-center  px-5 py-20" data-aos="fade-right">
                 <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-4 sm:px-10 rounded-lg" onSubmit={handleLogin}>
-                    <h3 className="text-3xl font-bold ">Welcome Back </h3>
+                    <h1 className="text-3xl font-bold ">Welcome Back </h1>
                     <p className="mt-2 font-bold ">LogIn Now</p>
 
                     <label className="input input-bordered flex items-center gap-2 bg-black my-5">
@@ -165,13 +165,13 @@ const Login = () => {
                                 error&& <p className="my-3 text-bold text-red-600">{error}</p>
                             }
                     <input type="submit" value="Submit" className="w-full btn hover:bg-black mt-5" />
-                    <p className="mt-3">Do not have an Account yet ? <Link to="/register" className="font-semibold btn-link link-hover" >Register </Link>Now</p>
+                    <p className="mt-3">Do not have an Account yet ? <Link to="/register" className="font-semibold btn-link link-hover text-blue-500" >Register </Link>Now</p>
 
                     <p className="text-sm font-bold text-[#585757] text-center mt-3">& <br /> Log in With </p>
 
                     <div className=" flex justify-center gap-5 pt-3">
-                        <button onClick={handleGoogle} className="btn btn-circle text-3xl text-center"><FcGoogle /></button>
-                        <button onClick={handleGithub} className="btn btn-circle text-3xl text-center"> <BsGithub /></button>
+                        <button onClick={handleGoogle} className="btn btn-circle  text-3xl text-center"><FcGoogle /></button>
+                        <button onClick={handleGithub} className="btn btn-circle  text-3xl text-center"> <BsGithub /></button>
                     </div>
                 </form>
             </div>

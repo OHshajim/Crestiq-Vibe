@@ -9,7 +9,7 @@ const Navbar = () => {
         <li><NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " border bg-[#7b7b7b71]" : ""
+                isPending ? "pending" : isActive ? " border-2 border-blue-500 text-bold text-blue-500" : ""
             }>
             home
         </NavLink></li>
@@ -17,14 +17,14 @@ const Navbar = () => {
         <li><NavLink
             to='/update'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " border " : ""
+                isPending ? "pending" : isActive ? " border-2 border-blue-500 text-bold text-blue-500 " : ""
             }>
             Update Profile</NavLink></li>
 
         <li><NavLink
             to='/aboutus'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? " border " : ""
+                isPending ? "pending" : isActive ? " border-2 border-blue-500 text-bold text-blue-500 " : ""
             }>About Us</NavLink></li>
     </>
     const logout = () => {
@@ -64,25 +64,25 @@ const Navbar = () => {
                                 {Links}
                             </ul>
                         </div>
-                        <a className="  text-xl">Crestiq Vibe</a>
+                        <a className=" font-bold  text-xl ml-3">Crestiq <span className="text-blue-500">Vibe</span></a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
                             {Links}
                         </ul>
                     </div>
-                    <div className="navbar-end">
+                    <div className="navbar-end ">
                         {
                             user ?
                                 <>
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-left" data-tip={user.displayName}>
                                         <div className="w-12 rounded-full ">
-                                            <img alt="User" src={user.photoURL} />
+                                            <img alt="User" src={user.photoURL} className="border-2 rounded-full border-blue-500" />
                                         </div>
                                     </div>
                                     <button className="btn ml-3" onClick={logout}>Log out</button>
                                 </>
-                                : <Link className="btn ml-3" to='/login' >Log in</Link>
+                                : <Link className="btn ml-3 " to='/login' >Log in</Link>
                         }
 
                     </div>

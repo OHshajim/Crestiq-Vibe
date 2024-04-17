@@ -7,25 +7,25 @@ const Estate = ({ property }) => {
     // console.log(facilities.length);
     return (
         <div>
-            <div className="card  bg-[#191818] shadow-xl h-full rounded-lg " data-aos="fade-up">
-                <figure ><img src={image_url} alt="Property" className="max-w-[730px] w-full h-[250px] rounded-lg m-5" /></figure>
-                <div className="p-5 ">
-                    <h2 className="card-title">{estate_title}</h2>
-                    <h3 className="">{segment_name}</h3>
+            <div className="card  bg-[#191818] shadow-xl h-full rounded-lg p-5 " data-aos="fade-up">
+                <figure ><img src={image_url} alt="Property" className="max-w-[730px] w-full h-[250px] rounded-lg " /></figure>
+                <div className="py-5 ">
+                    <h2 className="card-title font-bold">{estate_title}</h2>
+                    <h4 className="text-sm font-semibold">{segment_name}</h4>
                     {
                         description.length > 100 ?
-                            <>
+                            <p>
                                 {description.slice(0, 100)}...
-                            </> : description
+                            </p> : description
                     }
-                    <div className=" flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                        <div className="flex flex-col   ">
-                            <p>Price : {price}<span className="text-red-500">$</span></p>
-                            <p className="flex  items-center gap-1" ><span className="text-xl font-bold"><IoLocationOutline /></span> {location}</p>
+                    <div className=" flex flex-col sm:flex-row justify-between items-start sm:items-center ">
+                        <div className="flex flex-col gap-4">
+                            <h3 className="text-base font-bold">Price : {price}$</h3>
+                            <h3 className="flex  items-center gap-1" ><span className="text-xl font-bold"><IoLocationOutline /></span> {location}</h3>
                         </div>
-                        <div className="flex  flex-col space-y-2">
-                            <p className="border py-1 px-3 rounded-full font-bold flex justify-center">{status}</p>
-                            <p className="border py-1 my-3 px-3 rounded-full font-bold flex justify-center">{area}</p>
+                        <div className="flex  flex-col gap-4">
+                            <h3 className="border border-blue-500 py-1 px-3 rounded-full font-bold flex justify-center">{status}</h3>
+                            <h3 className="border border-blue-500 py-1 px-3 rounded-full font-bold flex justify-center">{area}</h3>
                         </div>
                     </div>
                     <div className="flex flex-col ">
@@ -40,7 +40,7 @@ const Estate = ({ property }) => {
                             </div>
                         </div>
                         <div className="mt-7">
-                            <Link to={`/EstateDetails/${id}`}><button className="btn btn-primary w-full">View Property</button></Link>
+                            <Link to={`/EstateDetails/${id}`}><button className="btn  w-full">View Property</button></Link>
                         </div>
                     </div>
                 </div>

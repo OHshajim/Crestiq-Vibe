@@ -24,24 +24,37 @@ const Register = () => {
         const password = e.target.password.value;
         const confirmPassword = e.target.confirmPassword.value;
         setError("")
+        if (email === "" || password === "" || image === ""){
+            toast.error('please fullfil the form', {
+                position: "top-right",
+                autoClose: 3500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
+            return;
+        }
+            if (password !== confirmPassword) {
+                setError("Passwords do not match. Please try again")
+                return;
+            }
 
-        if (password !== confirmPassword) {
-            setError("Passwords do not match. Please try again")
-            return;
-        }
-
-        else if (password.length < 6) {
-            setError("Password must be at least 6 characters long.")
-            return;
-        }
-        else if (!/[A-Z]/.test(password)) {
-            setError("Password must include at least 1 capital letter.")
-            return;
-        }
-        else if (!/[a-z]/.test(password)) {
-            setError("Password must include at least 1 lowercase  letter.")
-            return;
-        }
+            else if (password.length < 6) {
+                setError("Password must be at least 6 characters long.")
+                return;
+            }
+            else if (!/[A-Z]/.test(password)) {
+                setError("Password must include at least 1 capital letter.")
+                return;
+            }
+            else if (!/[a-z]/.test(password)) {
+                setError("Password must include at least 1 lowercase  letter.")
+                return;
+            }
         console.log(email, password, confirmPassword);
         // log in 
         register(email, password)
@@ -92,23 +105,23 @@ const Register = () => {
 
                 <div className=" w-screen px-5 py-20" data-aos="fade-left">
                     <form className=" max-w-[700px] mx-auto w-full bg-[#050a15] py-16 px-4  sm:px-10 rounded-lg" onSubmit={handleRegister}>
-                        <h3 className="text-3xl font-bold">Register Now</h3>
+                        <h1 className="text-3xl font-bold">Register Now</h1>
 
                         <label className="input input-bordered flex items-center gap-2 bg-black my-5">
                             <AiOutlineMail />
-                            <input type="email" className="grow" placeholder="Email" name="email" required />
+                            <input type="email" className="grow" placeholder="Email" name="email"  />
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black my-5">
                             <AiOutlineUser />
-                            <input type="text" className="grow" placeholder="User Name" name="name" required />
+                            <input type="text" className="grow" placeholder="User Name" name="name"  />
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black my-5">
                             <AiOutlineUser />
-                            <input type="text" className="grow" placeholder="User Image URL" name="image" required />
+                            <input type="text" className="grow" placeholder="User Image URL" name="image"  />
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black">
                             <RiLockPasswordLine />
-                            <input type={see ? "text" : "password"} className="grow" placeholder="password" name="password" required />
+                            <input type={see ? "text" : "password"} className="grow" placeholder="password" name="password"  />
                             <span onClick={() => setSee(!see)} className="text-sm sm:text-xl " >
                                 {
                                     see ?
@@ -119,7 +132,7 @@ const Register = () => {
                         </label>
                         <label className="input input-bordered flex items-center gap-2 bg-black mt-5">
                             <RiLockPasswordFill />
-                            <input type={isShow ? "text" : "password"} className="grow" placeholder="Confirm Password" name="confirmPassword" required />
+                            <input type={isShow ? "text" : "password"} className="grow" placeholder="Confirm Password" name="confirmPassword"  />
                             <span onClick={() => setShow(!isShow)} className="text-sm sm:text-xl " >
                                 {
                                     isShow ?
@@ -132,7 +145,7 @@ const Register = () => {
                             error && <p className="text-red-700 font-bold mt-3">{error}</p>
                         }
                         <input type="submit" value="Submit" className="w-full btn hover:bg-black mt-4" />
-                        <p className="mt-2">Already have an Account ? <Link to="/login" className=" btn-link link-hover" >Log in</Link></p>
+                        <p className="mt-2">Already have an Account ? <Link to="/login" className=" btn-link link-hover text-blue-500" >Log in</Link></p>
                     </form>
                 </div>
             </div>

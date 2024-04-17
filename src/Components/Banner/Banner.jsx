@@ -28,7 +28,7 @@ const Header = () => {
 
           <div className='  animate__animated  animate__fadeInUp flex flex-col justify-center max-w-[1500px] mx-auto px-20 h-full' >
             <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
-            <h3 className='font-bold mt-2'>Welcome to Crestiq Vibe: Your Gateway to Extraordinary Escapes</h3>
+            <p className='font-bold text-[#d0e7e6ed]'>Welcome to Crestiq Vibe: Your Gateway to Extraordinary Escapes</p>
           </div>
 
         </div>
@@ -39,7 +39,7 @@ const Header = () => {
 
           <div className=' animate__animated  animate__fadeInDown  flex justify-center flex-col h-full max-w-[1500px] mx-auto px-20' >
             <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
-            <h3 className='font-bold mt-2'>Welcome to Crestiq Vibe – your gateway to unparalleled hospitality.</h3>
+            <p className='font-bold text-[#d0e7e6ed]'>Welcome to Crestiq Vibe – your gateway to unparalleled hospitality.</p>
           </div>
 
         </div>
@@ -50,7 +50,7 @@ const Header = () => {
 
           <div className='animate__animated  animate__fadeInLeft  flex flex-col justify-center  h-full max-w-[1500px] mx-auto px-20'>
             <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
-            <h3 className='font-bold mt-2'>Embrace the art of hospitality redefined with Crestiq Vibe</h3>
+            <p className='font-bold text-[#d0e7e6ed]'>Embrace the art of hospitality redefined with Crestiq Vibe</p>
           </div>
 
         </div>

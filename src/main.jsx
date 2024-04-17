@@ -7,7 +7,6 @@ import {
 import Router from './Pages/Route/Router';
 import AuthProvider from './Provider/AuthProvider';
 import { HelmetProvider } from 'react-helmet-async';
-import { ToastContainer } from 'react-toastify';
 
 
 

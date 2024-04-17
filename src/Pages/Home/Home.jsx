@@ -23,7 +23,7 @@ const Home = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row justify-between gap-10 py-10" >
-                        <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
+                        <div className="flex gap-3 shadow-lg border-b-[3px] border-blue-500 rounded-lg p-5" data-aos="fade-up">
                             <h2 className="text-2xl md:text-4xl font-bold">01</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Fast Support</h2>
@@ -31,7 +31,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
+                        <div className="flex gap-3 shadow-lg border-b-[3px] border-blue-500 rounded-lg p-5" data-aos="fade-up">
                             <h2 className="text-2xl md:text-4xl font-bold">02</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Creative Design</h2>
@@ -40,7 +40,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
+                        <div className="flex gap-3 shadow-lg border-b-[3px] border-blue-500 rounded-lg p-5" data-aos="fade-up">
                             <h2 className="text-2xl md:text-4xl font-bold">03</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Affordable</h2>
