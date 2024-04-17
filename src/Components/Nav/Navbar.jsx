@@ -53,7 +53,7 @@ const Navbar = () => {
     window.addEventListener("scroll", setFixed)
 
     return (
-         <div className={fix ? "fixed z-10 w-full  bg-[#0f0e0e] duration-500" : "fixed z-10 w-full duration-200"}>
+         <div className={fix ? "fixed z-10 w-full  bg-[#0f0e0e] duration-500" : "fixed z-10 w-full duration-200"}data-aos="fade-down">
                 <div className="navbar  text-white max-w-[1600px] w-full mx-auto px-2 md:px-8">
                     <div className="navbar-start">
                         <div className="dropdown">

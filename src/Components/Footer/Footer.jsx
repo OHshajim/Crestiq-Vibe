@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Footer = () => {
     return (
         <div>
-        <div className="bg-[#141313] ">
+        <div className="bg-[#141313] " data-aos="fade-up">
             <div className="max-w-[1600px]  mx-auto">
                 <footer className="flex flex-col lg:flex-row  justify-between items-start lg:items-center footer py-10 px-10 md:px-4 text-base-content">
                     <p className="text-3xl">Crestiq Vibe <br /><span className="text-base " >Providing reliable tech since 2018</span></p>
