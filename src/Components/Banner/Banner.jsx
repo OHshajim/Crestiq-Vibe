@@ -27,8 +27,8 @@ const Header = () => {
         <div className='h-screen slide1 ' >
 
           <div className='  animate__animated  animate__fadeInUp flex flex-col justify-center max-w-[1500px] mx-auto px-20 h-full' >
-            <h1>Crestiq Vibe</h1>
-            <h3 >Welcome to Crestiq Vibe: Your Gateway to Extraordinary Escapes</h3>
+            <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
+            <h3 className='font-bold mt-2'>Welcome to Crestiq Vibe: Your Gateway to Extraordinary Escapes</h3>
           </div>
 
         </div>
@@ -38,8 +38,8 @@ const Header = () => {
         <div className='h-screen slide2 ' >
 
           <div className=' animate__animated  animate__fadeInDown  flex justify-center flex-col h-full max-w-[1500px] mx-auto px-20' >
-            <h1 >Crestiq Vibe</h1>
-            <h3>Welcome to Crestiq Vibe – your gateway to unparalleled hospitality.</h3>
+            <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
+            <h3 className='font-bold mt-2'>Welcome to Crestiq Vibe – your gateway to unparalleled hospitality.</h3>
           </div>
 
         </div>
@@ -49,8 +49,8 @@ const Header = () => {
         <div className='h-screen slide3 ' >
 
           <div className='animate__animated  animate__fadeInLeft  flex flex-col justify-center  h-full max-w-[1500px] mx-auto px-20'>
-            <h1>Crestiq Vibe</h1>
-            <h3>Embrace the art of hospitality redefined with Crestiq Vibe</h3>
+            <h1 className='text-3xl md:text-5xl font-bold'>Crestiq Vibe</h1>
+            <h3 className='font-bold mt-2'>Embrace the art of hospitality redefined with Crestiq Vibe</h3>
           </div>
 
         </div>

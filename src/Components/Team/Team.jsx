@@ -9,22 +9,22 @@ const Team = () => {
             </div>
             <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8" data-aos="fade-up">Meet Our Leadership Team</h1>
             <div className="grid xl:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-5 ">
-                <div className="bg-[#16161692] p-1 " data-aos="fade-up">
+                <div className="bg-[#16161692] p-1 " data-aos="fade-in">
                     <img src="https://i.ibb.co/ZS5CX5H/team01.jpg" alt="member" className="w-full" />
                     <h3 className="mx-8 my-1 text-xl md:text-2xl font-bold">Howard Holmes</h3>
                     <p className="mx-8 mb-6 text-lg">Manager</p>
                 </div>
-                <div className="bg-[#16161692] p-1 " data-aos="fade-up">
+                <div className="bg-[#16161692] p-1 " data-aos="fade-in">
                     <img src="https://i.ibb.co/3N4vC6R/team02.jpg" alt="member" className="w-full" />
                     <h3 className="mx-8 my-1 text-xl md:text-2xl font-bold">Howard Holmes</h3>
                     <p className="mx-8 mb-6 text-lg">Builder</p>
                 </div>
-                <div className="bg-[#16161692] p-1 " data-aos="fade-up">
+                <div className="bg-[#16161692] p-1 " data-aos="fade-in">
                     <img src="https://i.ibb.co/wMztRdq/team03.jpg" alt="member" className="w-full" />
                     <h3 className="mx-8 my-1 text-xl md:text-2xl font-bold">Howard Holmes</h3>
                     <p className="mx-8 mb-6 text-lg">Senior Designer</p>
                 </div>
-                <div className="bg-[#16161692] p-1 " data-aos="fade-up">
+                <div className="bg-[#16161692] p-1 " data-aos="fade-in">
                     <img src="https://i.ibb.co/Gt3whQK/team04.jpg" alt="member" className="w-full" />
                     <h3 className="mx-8 my-1 text-xl md:text-2xl font-bold">Howard Holmes</h3>
                     <p className="mx-8 mb-6 text-lg">Designer</p>

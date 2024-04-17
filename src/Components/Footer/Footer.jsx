@@ -5,7 +5,8 @@ const Footer = () => {
         <div>
         <div className="bg-[#141313] " data-aos="fade-up">
             <div className="max-w-[1600px]  mx-auto">
-                <footer className="flex flex-col lg:flex-row  justify-between items-start lg:items-center footer py-10 px-10 md:px-4 text-base-content">
+                <footer className="flex flex-col lg:flex-row  justify-between items-start lg:items-center footer py-10
+                 px-4 md:px-8 text-base-content">
                     <p className="text-3xl">Crestiq Vibe <br /><span className="text-base " >Providing reliable tech since 2018</span></p>
 
                     <nav>
@@ -28,7 +29,7 @@ const Footer = () => {
                                 <span className="label-text">Enter your email address</span>
                             </label>
                             <div className="join">
-                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item border-none" />
+                                <input type="text" placeholder="email" className="input input-bordered join-item border-none" />
                                 <button className="btn btn-accent join-item text-xl  border-none"><AiOutlineArrowRight /></button>
                             </div>
                         </fieldset>

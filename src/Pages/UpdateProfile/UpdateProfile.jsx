@@ -38,13 +38,13 @@ const UpdateProfile = () => {
     }
 
     return (
-        <div className="max-w-[1600px] flex flex-col  mx-auto py-20">
+        <div className="max-w-[1600px] flex flex-col  mx-auto px-5 py-20">
             <Helmet><title>Crestiq Vibe || Update Profile</title></Helmet>
             {
-            isLoading&& <div className="flex justify-center items-center"><span className="w-20 loading loading-spinner text-error"></span></div>
+            isLoading&& <div className="flex justify-center items-center "><span className="w-20 loading loading-spinner text-error"></span></div>
             }
             <div className="flex flex-col  items-center h-full">
-                <h1 className="text-4xl font-bold mb-20" data-aos="fade-left">Update your profile</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold mb-20" data-aos="fade-left">Update your profile</h1>
                 <div className="avatar" data-aos="fade-in">
                     <div className="w-36 rounded-full">
                         <img src={photoURL} className="border-[5px] rounded-full "/>

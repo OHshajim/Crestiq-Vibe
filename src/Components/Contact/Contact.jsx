@@ -4,8 +4,8 @@ import { MdForwardToInbox } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <div className="mb-20" data-aos="fade-left">
-            <div className="flex flex-1 flex-col-reverse xl:flex-row  p-8 gap-10">
+        <div className="mb-20" data-aos="fade-up">
+            <div className="flex flex-1 flex-col-reverse xl:flex-row px-4 md:px-8 gap-10">
 
                 <div className="flex flex-1 flex-col my-8 lg:my-20 space-y-2 md:space-y-8">
                     <div className="flex items-center gap-4">

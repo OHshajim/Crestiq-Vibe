@@ -138,8 +138,8 @@ const Login = () => {
     return (
         <div>
             <Helmet><title>Crestiq Vibe || Login</title></Helmet>
-            <div className="flex flex-col justify-center items-center  py-20" data-aos="fade-right">
-                <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-10 rounded-lg" onSubmit={handleLogin}>
+            <div className="flex flex-col justify-center items-center  px-5 py-20" data-aos="fade-right">
+                <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-4 sm:px-10 rounded-lg" onSubmit={handleLogin}>
                     <h3 className="text-3xl font-bold ">Welcome Back </h3>
                     <p className="mt-2 font-bold ">LogIn Now</p>
 

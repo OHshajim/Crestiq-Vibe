@@ -6,7 +6,7 @@ const Estates = () => {
     // console.log(properties);
     return (
         <div className="my-20 max-w-[1600px]  mx-auto">
-            <h1 className="text-center text-4xl md:text-4xl xl:text-5xl font-bold mt-10 mb-3" data-aos="fade-up">Latest Properties</h1>
+            <h1 className="text-center text-2xl md:text-3xl lg:text-5xl font-bold mt-10 mb-3" data-aos="fade-up">Latest Properties</h1>
             <p className="text-center mb-10 mx-8" data-aos="fade-in">Explore our premier selection of properties for sale or rent from elegant hotels to cozy cabins, chic villas to charming B&Bs. Your perfect retreat awaits.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-2 sm:m-8 ">
                 {

@@ -16,7 +16,7 @@ const Home = () => {
                 <TopPlace />
 
                 {/* service to chose us  */}
-                <div className="max-w-[1600px] mx-auto px-8 my-20">
+                <div className="max-w-[1600px] mx-auto px-4 md:px-8 my-20">
 
                     <h1 className="text-center text-2xl md:text-3xl lg:text-5xl" data-aos="fade-up">Why our services are the top choice</h1>
                     <p className="text-center text-base my-5" data-aso="fade-up">We provide our best with our employees , designer and workers . We make our properties so unique and comfortable , you can see our reviews .
@@ -24,7 +24,7 @@ const Home = () => {
 
                     <div className="flex flex-col md:flex-row justify-between gap-10 py-10" >
                         <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
-                            <h2 className="text-4xl font-bold">01</h2>
+                            <h2 className="text-2xl md:text-4xl font-bold">01</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Fast Support</h2>
                                 <p>At Crestiq Vibe, we believe in providing swift and reliable support to our valued clients, ensuring that every step of your journey with us is seamless and stress-free. Our dedicated team is committed to delivering prompt assistance, addressing your needs with efficiency and expertise.
@@ -32,7 +32,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
-                            <h2 className="text-4xl font-bold">02</h2>
+                            <h2 className="text-2xl md:text-4xl font-bold">02</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Creative Design</h2>
                                 <p>
@@ -41,7 +41,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="flex gap-3 shadow-lg border-b-2 rounded-lg p-5" data-aos="fade-up">
-                            <h2 className="text-4xl font-bold">03</h2>
+                            <h2 className="text-2xl md:text-4xl font-bold">03</h2>
                             <div>
                                 <h2 className="text-2xl mb-3 font-semibold">Affordable</h2>
                                 <p>

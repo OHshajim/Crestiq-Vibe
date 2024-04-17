@@ -2,9 +2,9 @@
 const TopPlace = () => {
     return (
         <div className="my-20 max-w-[1600px] mx-auto ">
-            <h1 className="text-center text-4xl font-bold" data-aos="fade-up">Our Next Locations </h1>
+            <h1 className="text-center text-2xl md:text-3xl lg:text-5xl font-bold" data-aos="fade-up">Our Next Locations </h1>
             <p className="text-base text-center mt-2 mb-10" data-aos="fade-up">Discover diverse escapes with Crestiq Vibe. Find your perfect retreat today.</p>
-            <div className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 gap-5 p-8">
+            <div className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 gap-5 px-4 md:px-8">
                 <div className="relative max-h-[300px]" data-aos="fade-in">
                     <img src="https://i.ibb.co/nbCZ52X/empire-state-building-night-23-2151003509.jpg"
                         className=" w-full h-full" alt="USA" />

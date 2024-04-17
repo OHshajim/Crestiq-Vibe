@@ -90,8 +90,8 @@ const Register = () => {
 
             <div>
 
-                <div className="flex flex-col justify-center items-center w-screen py-20" data-aos="fade-left">
-                    <form className=" max-w-[700px] w-full bg-[#050a15] py-16 px-10 rounded-lg" onSubmit={handleRegister}>
+                <div className=" w-screen px-5 py-20" data-aos="fade-left">
+                    <form className=" max-w-[700px] mx-auto w-full bg-[#050a15] py-16 px-4  sm:px-10 rounded-lg" onSubmit={handleRegister}>
                         <h3 className="text-3xl font-bold">Register Now</h3>
 
                         <label className="input input-bordered flex items-center gap-2 bg-black my-5">
