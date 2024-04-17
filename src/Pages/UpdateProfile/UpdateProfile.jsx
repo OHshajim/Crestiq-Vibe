@@ -3,13 +3,13 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/Firebase.config";
+import { Bounce, toast } from "react-toastify";
 
 const UpdateProfile = () => {
     const { user, isLoading } = useContext(AuthContext)
     console.log(user);
     const { displayName, email, photoURL } = user
     const handleUpdate = e => {
-        e.preventDefault()
         const email = e.target.email.value;
         const name = e.target.name.value;
         const image = e.target.image.value;
@@ -20,6 +20,17 @@ const UpdateProfile = () => {
         })
             .then(() => {
                 console.log(auth.currentUser)
+                toast.success('Update successful', {
+                    position: "top-right",
+                    autoClose: 3500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Bounce,
+                });
             })
             .catch((error) => {
                 console.log(error)
@@ -30,7 +41,7 @@ const UpdateProfile = () => {
         <div className="max-w-[1600px] flex flex-col  mx-auto py-20">
             <Helmet><title>Crestiq Vibe || Update Profile</title></Helmet>
             {
-                isLoading && <div className="flex justify-center items-center my-20"><span className="w-20 loading loading-spinner text-error"></span></div>
+            isLoading&& <div className="flex justify-center items-center"><span className="w-20 loading loading-spinner text-error"></span></div>
             }
             <div className="flex flex-col  items-center h-full">
                 <h1 className="text-4xl font-bold mb-20" data-aos="fade-left">Update your profile</h1>
